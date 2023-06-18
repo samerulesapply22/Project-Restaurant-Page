@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Bojack';
+    src: url('src/images&fonts/ness.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Bojack';
+}
