@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction about(container) {\n    const about = document.createElement('div');\n    const aboutTitle = document.createElement('div');\n    const aboutContainer = document.createElement('div');\n    const aboutDescription = document.createElement('div');\n    const aboutStaff = document.createElement('div');\n\n    about.id = 'about';\n    aboutTitle.id = 'aboutTitle';\n    aboutContainer.id = 'aboutContainer';\n    aboutDescription.id = 'aboutDescription';\n    aboutStaff.id = 'aboutStaff';\n\n    container.append(about);\n    about.append(aboutTitle);\n    about.append(aboutContainer);\n    aboutContainer.append(aboutDescription);\n    aboutContainer.append(aboutStaff);\n    \n    aboutTitle.textContent = 'ABOUT'\n    aboutDescription.textContent = 'A waffle is a dish made from leavened batter or dough that is cooked between two plates that are patterned to give a characteristic size, shape, and surface impression. There are many variations based on the type of waffle iron and recipe used. Waffles are eaten throughout the world, particularly in Belgium, which has over a dozen regional varieties. Waffles may be made fresh or simply heated after having been commercially cooked and frozen.';\n    aboutStaff.innerHTML = '<b>Robert Smith</b>  Chef Founder\\r\\n';\n    aboutStaff.innerHTML += '<b>Simon Gallup</b>  General Manager\\r\\n';\n    aboutStaff.innerHTML += '<b>Roger O\\'Donnel</b>  Second Chef\\r\\n';\n    aboutStaff.innerHTML += '<b>Perry Bamonte</b>  Dough Chef\\r\\n';\n    aboutStaff.innerHTML += '<b>Reeves Gabrels</b>  Topings Manager\\r\\n';\n    \n\n    return about;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (about);\n\n//# sourceURL=webpack://project-restaurant-page/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\nconst container = document.querySelector('#container');\n(0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(container);\n(0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(container)\n\n\n//about\n//reviews\n//order\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\n\nconst container = document.querySelector('#container');\n(0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(container);\n(0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(container)\n;(0,_about__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(container)\n\n\n\n//reviews\n//order\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
 
 /***/ }),
 
