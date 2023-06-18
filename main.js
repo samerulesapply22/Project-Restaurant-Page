@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_fonts_github_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images&fonts/github.png */ \"./src/images&fonts/github.png\");\n\n\nfunction footer(container) {\n    const footer = document.createElement('div');\n    footer.id = 'footer'\n    container.append(footer);\n    footer.textContent = 'Copyright © 2023 samerulesapply22'\n\n    const github = new Image();\n    github.src = _images_fonts_github_png__WEBPACK_IMPORTED_MODULE_0__;\n    github.id = 'github';\n    footer.append(github)\n    github.addEventListener('click', () => window.open('https://github.com/samerulesapply22', '_blank'));\n\n    return footer;\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\n\n//# sourceURL=webpack://project-restaurant-page/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -46,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\n\nconst container = document.querySelector('#container');\n(0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(container);\n(0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(container)\n;(0,_about__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(container)\n\n\n\n//reviews\n//order\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\n\n\nconst container = document.querySelector('#container');\n(0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(container);\n(0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(container);\n(0,_about__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(container);\n(0,_footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(container);\n\n\n\n\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -57,6 +67,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hea
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_fonts_waffle_menu_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images&fonts/waffle-menu.png */ \"./src/images&fonts/waffle-menu.png\");\n\n\nfunction menu(container) {\n    const menu = document.createElement('div');\n    const menuTitle = document.createElement('div');\n    const menuContents = document.createElement('div');\n    menu.id = 'menu';\n    menuTitle.id = 'menuTitle';\n    menuContents.id = 'menuContents';\n    container.append(menu);\n    menu.append(menuTitle);\n    menu.append(menuContents);\n    menuTitle.textContent = 'MENU';\n\n    const menuContent = [];\n    const menuImage = [];\n    const waffleTitle = [];\n    const waffleDescription = [];\n    const waffleOrder = [];\n    for (let i = 0; i < 4; i++) {\n        menuContent[i] = document.createElement('div');\n        menuContent[i].className = 'menuContent';\n        menuContents.append(menuContent[i]);\n\n        menuImage[i] = new Image();\n        menuImage[i].className = 'menuImage';\n        menuImage[i].src = _images_fonts_waffle_menu_png__WEBPACK_IMPORTED_MODULE_0__;\n        menuContent[i].append(menuImage[i]);\n        \n        waffleTitle[i] = document.createElement('div');\n        waffleTitle[i].className = 'waffleTitle';\n        waffleTitle[i].textContent = 'WAFFLE ' + (i+1);\n        menuContent[i].append(waffleTitle[i]);\n\n        waffleDescription[i] = document.createElement('div');\n        waffleDescription[i].className = 'waffleDescription';\n        waffleDescription[i].textContent = 'a leavened batter or dough cooked between two hot plates of a waffle iron, patterned to give a characteristic size, shape, and grid-like surface impression'\n        menuContent[i].append(waffleDescription[i]);\n\n        waffleOrder[i] = document.createElement('button');\n        waffleOrder[i].className = 'waffleOrder';\n        waffleOrder[i].textContent = 'Order now';\n        menuContent[i].append(waffleOrder[i]);\n    }\n\n    return menu;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);\n\n//# sourceURL=webpack://project-restaurant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/images&fonts/github.png":
+/*!*************************************!*\
+  !*** ./src/images&fonts/github.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"7615be16eed41f806def.png\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/images&fonts/github.png?");
 
 /***/ }),
 
