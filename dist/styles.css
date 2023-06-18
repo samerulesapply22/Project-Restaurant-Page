@@ -20,6 +20,7 @@ body {
     color: white;
     padding: 1em;
     position: sticky;
+    z-index: 10;
 }
 
 #links {
@@ -33,20 +34,18 @@ body {
 }
 
 #wafflesImg {
-    position:fixed;
     width: 100%;
-    height: 70%;
+    height: 90vh;
     object-fit: cover;
-   object-position:50% 50%;
+    object-position:50% 50%;
 }
 
 #div2 {
-    position:fixed;
+    position: absolute;
+    top: 50%;
     z-index: 2;
     color: white;
-    margin-top: 40vh;
     background-color: rgba(185, 47, 54, .87);
-
     padding: 1em;
     padding-left: 3em;
     width: 100%;
@@ -72,5 +71,55 @@ body {
 
 #ordernow:hover {
     background-color: #431811;
+    color: white;
+}
+
+#menu {
+    padding: 2em;
+}
+
+#menuTitle {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+#menuContents {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.menuContent {
+    aspect-ratio: 2 / 1;
+}
+
+.menuImage {
+    aspect-ratio: 1.1 / 1;
+    max-width: 300px;
+    margin-bottom: 0.6em;
+    border-radius: 10px;
+}
+
+.waffleTitle {
+    font-size: 1.3em;
+}
+
+.waffleDescription {
+    color:rgba(42, 32, 32, 0.899);
+}
+
+.waffleOrder {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: hsl(229, 16%, 27%);
+    color: white;
+    border: 0.5px solid black;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.waffleOrder:hover {
+    background-color: rgb(185, 47, 54);
     color: white;
 }

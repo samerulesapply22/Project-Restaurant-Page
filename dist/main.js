@@ -36,7 +36,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\nconst container = document.querySelector('#container');\n(0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(container);\n\n//menu\n//about\n//reviews\n//order\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\nconst container = document.querySelector('#container');\n(0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(container);\n(0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(container)\n\n\n//about\n//reviews\n//order\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_fonts_waffle_menu_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images&fonts/waffle-menu.png */ \"./src/images&fonts/waffle-menu.png\");\n\n\nfunction menu(container) {\n    const menu = document.createElement('div');\n    const menuTitle = document.createElement('div');\n    const menuContents = document.createElement('div');\n    menu.id = 'menu';\n    menuTitle.id = 'menuTitle';\n    menuContents.id = 'menuContents';\n    container.append(menu);\n    menu.append(menuTitle);\n    menu.append(menuContents);\n    menuTitle.textContent = 'MENU';\n\n    const menuContent = [];\n    const menuImage = [];\n    const waffleTitle = [];\n    const waffleDescription = [];\n    const waffleOrder = [];\n    for (let i = 0; i < 4; i++) {\n        menuContent[i] = document.createElement('div');\n        menuContent[i].className = 'menuContent';\n        menuContents.append(menuContent[i]);\n\n        menuImage[i] = new Image();\n        menuImage[i].className = 'menuImage';\n        menuImage[i].src = _images_fonts_waffle_menu_png__WEBPACK_IMPORTED_MODULE_0__;\n        menuContent[i].append(menuImage[i]);\n        \n        waffleTitle[i] = document.createElement('div');\n        waffleTitle[i].className = 'waffleTitle';\n        waffleTitle[i].textContent = 'WAFFLE ' + (i+1);\n        menuContent[i].append(waffleTitle[i]);\n\n        waffleDescription[i] = document.createElement('div');\n        waffleDescription[i].className = 'waffleDescription';\n        waffleDescription[i].textContent = 'a leavened batter or dough cooked between two hot plates of a waffle iron, patterned to give a characteristic size, shape, and grid-like surface impression'\n        menuContent[i].append(waffleDescription[i]);\n\n        waffleOrder[i] = document.createElement('button');\n        waffleOrder[i].className = 'waffleOrder';\n        waffleOrder[i].textContent = 'Order now';\n        menuContent[i].append(waffleOrder[i]);\n    }\n\n    return menu;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);\n\n//# sourceURL=webpack://project-restaurant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/images&fonts/waffle-menu.png":
+/*!******************************************!*\
+  !*** ./src/images&fonts/waffle-menu.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6a9397cdb2f026ebe9f2.png\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/images&fonts/waffle-menu.png?");
 
 /***/ }),
 
