@@ -10,43 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction header(container) {\n    const header = document.createElement('div');\n    const links = document.createElement('div');\n    const signin = document.createElement('div');\n    const home = document.createElement('div');\n    const menu = document.createElement('div');\n    const about = document.createElement('div');\n    const reviews = document.createElement('div');\n\n    header.id = 'header';\n    links.id = 'links'; \n    signin.id = 'signin';\n    home.className = 'links';\n    menu.className = 'links';\n    about.className = 'links';\n    reviews.className = 'links';\n\n    container.append(header);\n    header.append(links);\n    header.append(signin);\n    links.append(home);\n    links.append(menu);\n    links.append(about);\n    links.append(reviews);\n\n    signin.textContent = 'SIGN IN';\n    home.textContent = 'Home';\n    menu.textContent = 'Menu';\n    about.textContent = 'About';\n    reviews.textContent = 'Reviews';\n\n    return header;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n//# sourceURL=webpack://project-restaurant-page/./src/header.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_fonts_waffles_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images&fonts/waffles.jpg */ \"./src/images&fonts/waffles.jpg\");\n\n\nfunction home(container) {\n    const home = document.createElement('div');\n    const div2 = document.createElement('div');\n    const title =  document.createElement('div');\n    const ordernow = document.createElement('button');\n\n    const waffles = new Image();\n    waffles.src = _images_fonts_waffles_jpg__WEBPACK_IMPORTED_MODULE_0__;\n    waffles.id = 'wafflesImg';\n    div2.id = 'div2'\n    title.id = 'title';\n    ordernow.id = 'ordernow'\n\n    container.append(home);\n    home.append(waffles);\n    home.append(div2);\n    div2.append(title);\n    div2.append(ordernow);\n\n    title.textContent = 'Let there be brunch.';\n    ordernow.textContent = 'ORDER NOW';\n\n    return home;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://project-restaurant-page/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _startpage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./startpage */ \"./src/startpage.js\");\n\n\nconst container = document.querySelector('#container');\n(0,_startpage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\nconst container = document.querySelector('#container');\n(0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(container);\n\n//menu\n//about\n//reviews\n//order\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/startpage.js":
-/*!**************************!*\
-  !*** ./src/startpage.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_fonts_disintergation_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images&fonts/disintergation.jpeg */ \"./src/images&fonts/disintergation.jpeg\");\n/* harmony import */ var _images_fonts_the_head_on_the_door_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images&fonts/the head on the door.jpeg */ \"./src/images&fonts/the head on the door.jpeg\");\n\n\n\nfunction startPage(container) {\n\n    const container1 = document.createElement('div');\n    const div1 = document.createElement('div');\n    const title = document.createElement('div');\n    const imageholder1 = document.createElement('div');\n    const imageholder2 = document.createElement('div');\n\n    const disintergation = new Image();\n    disintergation.src = _images_fonts_disintergation_jpeg__WEBPACK_IMPORTED_MODULE_0__;\n    const headonthedoor = new Image();\n    headonthedoor.src = _images_fonts_the_head_on_the_door_jpeg__WEBPACK_IMPORTED_MODULE_1__;\n    \n    container.append(container1);\n    container1.append(div1);\n    div1.append(title);\n    div1.append (imageholder1);\n    container1.append(imageholder2);\n    imageholder1.append(headonthedoor);\n    imageholder2.append(disintergation);\n\n    container1.id = 'container1';\n    div1.id = 'div1'\n    title.id = 'title';\n    imageholder1.id =  'imageholder1';\n    imageholder2.id = 'imageholder2';\n\n    title.textContent = 'THE CURE';\n    return container1;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startPage);\n\n//# sourceURL=webpack://project-restaurant-page/./src/startpage.js?");
-
-/***/ }),
-
-/***/ "./src/images&fonts/disintergation.jpeg":
-/*!**********************************************!*\
-  !*** ./src/images&fonts/disintergation.jpeg ***!
-  \**********************************************/
+/***/ "./src/images&fonts/waffles.jpg":
+/*!**************************************!*\
+  !*** ./src/images&fonts/waffles.jpg ***!
+  \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"53e3ef1fef8306f44db1.jpeg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/images&fonts/disintergation.jpeg?");
-
-/***/ }),
-
-/***/ "./src/images&fonts/the head on the door.jpeg":
-/*!****************************************************!*\
-  !*** ./src/images&fonts/the head on the door.jpeg ***!
-  \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"4b7de8b5978c0cd403b6.jpeg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/images&fonts/the_head_on_the_door.jpeg?");
+eval("module.exports = __webpack_require__.p + \"d093005bb7576317962f.jpg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/images&fonts/waffles.jpg?");
 
 /***/ })
 

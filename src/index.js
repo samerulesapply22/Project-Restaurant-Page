@@ -1,4 +1,11 @@
-import startPage from "./startpage";
+import header from './header';
+import home from './home'
 
 const container = document.querySelector('#container');
-startPage(container);
+header(container);
+home(container);
+
+//menu
+//about
+//reviews
+//order
