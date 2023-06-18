@@ -1,8 +1,4 @@
-import Icon from './images&fonts/disintergation.jpeg';
+import startPage from "./startpage";
 
-const myIcon = new Image();
-myIcon.src = Icon;
-
-document.body.appendChild(myIcon);
-
-console.log('start');
+const container = document.querySelector('#container');
+startPage(container);

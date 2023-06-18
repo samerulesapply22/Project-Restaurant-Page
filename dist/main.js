@@ -16,7 +16,17 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_fonts_disintergation_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images&fonts/disintergation.jpeg */ \"./src/images&fonts/disintergation.jpeg\");\n\n\nconst myIcon = new Image();\nmyIcon.src = _images_fonts_disintergation_jpeg__WEBPACK_IMPORTED_MODULE_0__;\n\ndocument.body.appendChild(myIcon);\n\nconsole.log('start');\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _startpage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./startpage */ \"./src/startpage.js\");\n\n\nconst container = document.querySelector('#container');\n(0,_startpage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/startpage.js":
+/*!**************************!*\
+  !*** ./src/startpage.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_fonts_disintergation_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images&fonts/disintergation.jpeg */ \"./src/images&fonts/disintergation.jpeg\");\n/* harmony import */ var _images_fonts_the_head_on_the_door_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images&fonts/the head on the door.jpeg */ \"./src/images&fonts/the head on the door.jpeg\");\n\n\n\nfunction startPage(container) {\n\n    const container1 = document.createElement('div');\n    const div1 = document.createElement('div');\n    const title = document.createElement('div');\n    const imageholder1 = document.createElement('div');\n    const imageholder2 = document.createElement('div');\n\n    const disintergation = new Image();\n    disintergation.src = _images_fonts_disintergation_jpeg__WEBPACK_IMPORTED_MODULE_0__;\n    const headonthedoor = new Image();\n    headonthedoor.src = _images_fonts_the_head_on_the_door_jpeg__WEBPACK_IMPORTED_MODULE_1__;\n    \n    container.append(container1);\n    container1.append(div1);\n    div1.append(title);\n    div1.append (imageholder1);\n    container1.append(imageholder2);\n    imageholder1.append(headonthedoor);\n    imageholder2.append(disintergation);\n\n    container1.id = 'container1';\n    div1.id = 'div1'\n    title.id = 'title';\n    imageholder1.id =  'imageholder1';\n    imageholder2.id = 'imageholder2';\n\n    title.textContent = 'THE CURE';\n    return container1;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startPage);\n\n//# sourceURL=webpack://project-restaurant-page/./src/startpage.js?");
 
 /***/ }),
 
@@ -27,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ima
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"53e3ef1fef8306f44db1.jpeg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/images&fonts/disintergation.jpeg?");
+
+/***/ }),
+
+/***/ "./src/images&fonts/the head on the door.jpeg":
+/*!****************************************************!*\
+  !*** ./src/images&fonts/the head on the door.jpeg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4b7de8b5978c0cd403b6.jpeg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/images&fonts/the_head_on_the_door.jpeg?");
 
 /***/ })
 
@@ -57,6 +77,18 @@ eval("module.exports = __webpack_require__.p + \"53e3ef1fef8306f44db1.jpeg\";\n\
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -67,6 +99,11 @@ eval("module.exports = __webpack_require__.p + \"53e3ef1fef8306f44db1.jpeg\";\n\
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
