@@ -1,49 +1,76 @@
 @font-face {
     font-family: 'Bojack';
-    src: url('src/images&fonts/ness.ttf') format('ttf');
-    font-weight: 600;
+    src: url('../src/images&fonts/font.woff2') format('woff2');
     font-style: normal;
 }
 
 * {
     font-family: 'Bojack';
+    font-size: 1em;
 }
 
 body {
     margin: 0;
 }
 
-#container1 {
+#header {  
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #393d4f;
+    color: white;
     padding: 1em;
-    gap: 1em;
-    background-color: darkcyan;
+    position: sticky;
 }
 
-#div1 {
-    width: 30em;
- 
+#links {
+    display: flex;
+    gap: 5vh;
+    margin-left: 1em;
+}
+
+.links, #signin {
+    padding: 0.5em;
+}
+
+#wafflesImg {
+    position:fixed;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+   object-position:50% 50%;
+}
+
+#div2 {
+    position:fixed;
+    z-index: 2;
+    color: white;
+    margin-top: 40vh;
+    background-color: rgba(185, 47, 54, .87);
+
+    padding: 1em;
+    padding-left: 3em;
+    width: 100%;
+
 }
 
 #title {
-    font-size: 5vh;
-    text-align: center;
-    height: 1em;
+    padding: 0.3em 0; 
+    font-size: 3.5em;
+    line-height: .85;
+    font-weight: bolder;
 }
 
-#imageholder1 {
-    height: 26.8em;
-    margin-top: 1em;
-}
-  
-#imageholder2 {
-    width: 60em;
-    height: 30em;
+#ordernow {
+    margin-top: 0.4em;
+    padding: .7375em 3.75em .6125em;
+    background-color: white;
+    color: #431811;;
+    border-color:transparent;
+    border-radius: 1000px;
+    cursor: pointer;
 }
 
-img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+#ordernow:hover {
+    background-color: #431811;
+    color: white;
 }
