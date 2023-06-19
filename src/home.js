@@ -19,9 +19,9 @@ function home(container) {
     div2.append(title);
     div2.append(ordernow);
 
-    title.textContent = 'Let there be brunch.';
+    title.textContent = 'Start Your Day Right.';
     ordernow.textContent = 'ORDER NOW';
-    ordernow.addEventListener('click', () => window.open('https://github.com/samerulesapply22', '_blank'));
+    ordernow.addEventListener('click', () => window.open('https://www.allrecipes.com/recipe/20513/classic-waffles/', '_blank'));
 
 
     return home;

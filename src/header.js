@@ -32,10 +32,8 @@ function header(container) {
     home.addEventListener('click', () => window.location = '#wafflesImg');
     menu.addEventListener('click', () => window.location = '#menu');
     about.addEventListener('click', () => window.location = '#about');
-    reviews.addEventListener('click', () => window.open('https://github.com/samerulesapply22'));
-    signin.addEventListener('click', () => window.open('https://github.com/samerulesapply22', '_blank'));
-
-
+    reviews.addEventListener('click', () => window.open('https://www.nytimes.com/wirecutter/reviews/best-waffle-maker/'));
+    
     return header;
 }
 

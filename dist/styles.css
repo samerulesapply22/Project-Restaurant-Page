@@ -38,6 +38,8 @@ body {
 .links, #signin {
     padding: 0.5em;
     cursor: pointer;
+    text-transform: uppercase;
+
 }
 
 #wafflesImg {
@@ -161,4 +163,5 @@ body {
 #github {
     aspect-ratio: 1 / 1;
     max-width: 20px;
+    cursor: pointer;
 }
