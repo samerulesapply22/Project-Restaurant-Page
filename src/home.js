@@ -21,6 +21,8 @@ function home(container) {
 
     title.textContent = 'Let there be brunch.';
     ordernow.textContent = 'ORDER NOW';
+    ordernow.addEventListener('click', () => window.open('https://github.com/samerulesapply22', '_blank'));
+
 
     return home;
 }

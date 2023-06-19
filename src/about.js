@@ -25,7 +25,6 @@ function about(container) {
     aboutStaff.innerHTML += '<b>Perry Bamonte</b>  Dough Chef\r\n';
     aboutStaff.innerHTML += '<b>Reeves Gabrels</b>  Topings Manager\r\n';
     
-
     return about;
 }
 
